@@ -1,5 +1,9 @@
 import numpy as np
 
+# 문제 상황
+# 450kg 의 미사일이 29,000km/h의 속도로 우리나라에서 북쪽으로 발사되었을 때, 
+# 미사일에 작용하는 전향력은 얼마인가? ( 지구 각속도 : 7.29X10-5radians /sec )
+
 def calculate_coriolis_force(mass, velocity, angular_velocity):
     # 외적 (cross product) 계산
     coriolis_force = -2 * mass * np.cross(angular_velocity, velocity)
